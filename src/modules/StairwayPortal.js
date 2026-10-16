@@ -231,11 +231,7 @@ export class StairwayPortal {
     // Subtle pulsating hint text in DOM
     const hint = document.createElement('div');
     hint.id = 'portal-hint';
-    hint.innerHTML = `
-      <div class="portal-text desktop-text">✦ Chạm vào bậc thang để tiến tới nào baby ✦</div>
-      <div class="portal-text mobile-text">✦ Chạm vào đây baby ơii ✦</div>
-      <div class="portal-sub">Từng bước chân sẽ đưa chúng mình tiến vào vũ trụ tình yêu</div>
-    `;
+    hint.innerHTML = `<div class="portal-text">✦ Chạm vào đây baby ơii ✦</div>`;
     hint.addEventListener('pointerdown', (e) => {
       e.stopPropagation();
       this.stepForward(5);

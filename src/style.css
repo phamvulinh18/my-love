@@ -108,44 +108,31 @@ html, body {
   cursor: pointer;
   transition: opacity 0.8s ease, transform 0.4s ease;
   user-select: none;
-  background: rgba(12, 8, 24, 0.45);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  padding: 0.9rem 2.2rem;
+  background: rgba(18, 12, 32, 0.55);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  padding: 0.65rem 1.8rem;
   border-radius: 9999px;
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  box-shadow: 0 0 35px rgba(255, 255, 255, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.25);
+  width: max-content;
+  max-width: 90vw;
+  white-space: nowrap;
 }
 
 #portal-hint:hover {
   transform: translateX(-50%) scale(1.05);
-  box-shadow: 0 0 45px rgba(255, 255, 255, 0.45);
+  box-shadow: 0 0 35px rgba(255, 255, 255, 0.45);
 }
 
 .portal-text {
   font-family: var(--font-serif);
-  font-size: 1.25rem;
-  letter-spacing: 0.15em;
+  font-size: 1.15rem;
+  letter-spacing: 0.12em;
   color: #ffffff;
   text-shadow: 0 0 16px rgba(255, 255, 255, 0.9);
   animation: pulseLight 2.4s infinite ease-in-out;
   white-space: nowrap;
-}
-
-.desktop-text {
-  display: block;
-}
-
-.mobile-text {
-  display: none;
-}
-
-.portal-sub {
-  font-size: 0.72rem;
-  letter-spacing: 0.18em;
-  color: rgba(255, 255, 255, 0.75);
-  margin-top: 0.2rem;
-  text-transform: uppercase;
 }
 
 @keyframes pulseLight {
@@ -449,25 +436,19 @@ html, body {
     display: none;
   }
 
-  /* Mobile Portal Hint Pill: sleek horizontal capsule, never awkward circle */
-  .desktop-text {
-    display: none !important;
-  }
-  .mobile-text {
-    display: block !important;
-    font-size: 1.08rem !important;
-    letter-spacing: 0.08em !important;
-  }
-  .portal-sub {
-    display: none !important;
-  }
+  /* Mobile Portal Hint Pill: sleek horizontal capsule */
   #portal-hint {
     bottom: 9vh !important;
-    padding: 0.75rem 1.8rem !important;
+    padding: 0.55rem 1.4rem !important;
     white-space: nowrap !important;
     width: max-content !important;
-    max-width: 90vw !important;
+    max-width: 88vw !important;
     border-radius: 9999px !important;
-    box-shadow: 0 0 28px rgba(255, 255, 255, 0.32) !important;
+    box-shadow: 0 0 24px rgba(255, 255, 255, 0.3) !important;
+  }
+  .portal-text {
+    font-size: 0.96rem !important;
+    letter-spacing: 0.06em !important;
+    white-space: nowrap !important;
   }
 }
