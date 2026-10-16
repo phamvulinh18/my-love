@@ -232,8 +232,8 @@ export class StairwayPortal {
     const hint = document.createElement('div');
     hint.id = 'portal-hint';
     hint.innerHTML = `
-      <div class="portal-text">✦ Chạm vào để bước lên 5 bậc thang ✦</div>
-      <div class="portal-sub">Mỗi lần chạm sẽ tự bước lên 5 bậc tiến vào ánh sáng</div>
+      <div class="portal-text">✦ Chạm vào bậc thang để tiến tới nào baby ✦</div>
+      <div class="portal-sub">Từng bước chân sẽ đưa chúng mình tiến vào vũ trụ tình yêu</div>
     `;
     hint.addEventListener('pointerdown', (e) => {
       e.stopPropagation();
